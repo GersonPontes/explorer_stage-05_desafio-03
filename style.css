@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  display: grid;
+  height: 100vh;
+}
+
+.modeIcon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 6rem;
+  margin-right: 6rem;
+}
+
+.modeIcon:hover{
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+}
+
+.content{
+  display: flex;
+  width: 82rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.darkMode{
+  background-color: #121214;
+}
+
+.content .timer{
+  display: grid;
+  gap: 2.8rem;
+  width: 100%;
+}
+
+.content .timer .display{
+  width: 32rem;
+  display: flex;
+  justify-self: start;
+  align-self: end;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  color: #323238;
+}
+
+.content .timer .display.darkMode{
+  color: #FFFFFF;
+}
+
+.content .timer .controls{
+  width: 32rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+  justify-self: start;
+}
+
+.content .timer .controls .buttonPlay.darkMode svg path,
+.content .timer .controls .buttonStop.darkMode svg path,
+.content .timer .controls .buttonPlus.darkMode svg path,
+.content .timer .controls .buttonMinus.darkMode svg path{
+  fill: #C4C4CC;
+}
+
+.content .timer .controls .buttonPlay:hover,
+.content .timer .controls .buttonStop:hover,
+.content .timer .controls .buttonPlus:hover,
+.content .timer .controls .buttonMinus:hover{
+  cursor: pointer;
+}
+
+.content .buttons{
+  display: grid;
+  grid-template: "A B" "C D";
+  justify-content: end;
+  gap: 3.2rem;
+  width: 100%;
+}
+
+.content .buttons .musicButton.buttonFlorest{
+  grid-area: A;
+}
+
+.content .buttons .musicButton.buttonRain{
+  grid-area: B;
+}
+
+.content .buttons .musicButton.buttonCanteen{
+  grid-area: C;
+}
+
+.content .buttons .musicButton.buttonFireplace{
+  grid-area: D;
+}
+
+.content .buttons .musicButton{
+  position: relative;
+}
+
+.buttons .musicButton .buttonFlorest,
+.buttons .musicButton .buttonRain,
+.buttons .musicButton .buttonCanteen,
+.buttons .musicButton .buttonFireplace{
+  width: 13.8rem;
+  height: 15.2rem;
+  background: #E1E1E6;
+  border-radius: 2.4rem;
+  text-align: center;
+  padding-top: 2.4rem;
+}
+
+.volumeControl{
+  position: absolute;
+  bottom: 1.4rem;
+  left: 1.4rem;
+  right: 1.4rem;
+  accent-color: #323238;
+  margin: auto;
+}
+
+.content .buttons .musicButton .buttonFlorest.darkMode,
+.content .buttons .musicButton .buttonRain.darkMode,
+.content .buttons .musicButton .buttonCanteen.darkMode,
+.content .buttons .musicButton .buttonFireplace.darkMode{
+  background: #29292E;
+}
+
+.content .buttons .musicButton .buttonFlorest.darkMode svg path,
+.content .buttons .musicButton .buttonRain.darkMode svg path,
+.content .buttons .musicButton .buttonCanteen.darkMode svg path,
+.content .buttons .musicButton .buttonFireplace.darkMode svg path{
+  fill: #C4C4CC;;
+}
+
+.content .buttons .musicButton .pressedButton{
+  background: #02799D;
+}
+
+.content .buttons .musicButton .pressedButton.darkMode{
+  background: #0A3442;
+}
+
+.buttons .pressedButton svg path,
+.buttons .pressedButton.darkMode svg path{
+  fill: #FFFFFF;
+}
+
+.buttons .musicButton:hover{
+  cursor: pointer;
+}
